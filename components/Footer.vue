@@ -1,3 +1,5 @@
+ 
+
 <template>
 	<footer class="bg-green-300 text-black-300 py-12  w-full">
 		<div class="container mx-auto px-4">

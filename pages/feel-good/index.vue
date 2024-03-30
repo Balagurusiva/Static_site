@@ -1,57 +1,20 @@
-<template>
-	<div class="flex flex-wrap justify-center h-[80vh] items-center">
-		<div
-			class="w-[250px] h-[300px] border-2 border-green-300 rounded-[20px] p-[2px] m-2 flex flex-col items-center justify-around"
-		>
-			<img
-				src="/public/img/feel good.jpeg"
-				alt=""
-				class="w-[200px] h-[200px] contain rounded-[20px]"
-			/>
-			<div class="text-center">
-				<p class="font-bold">Forrest Gump</p>
-				<p>Feel good</p>
-			</div>
-		</div>
-		<div
-			class="w-[250px] h-[300px] border-2 border-green-300 rounded-[20px] p-[2px] m-2 flex flex-col items-center justify-around"
-		>
-			<img
-				src="/public/img/feel good.jpeg"
-				alt=""
-				class="w-[200px] h-[200px] contain rounded-[20px]"
-			/>
-			<div class="text-center">
-				<p class="font-bold">Forrest Gump</p>
-				<p>Feel good</p>
-			</div>
-		</div>
-		<div
-			class="w-[250px] h-[300px] border-2 border-green-300 rounded-[20px] p-[2px] m-2 flex flex-col items-center justify-around"
-		>
-			<img
-				src="/public/img/feel good.jpeg"
-				alt=""
-				class="w-[200px] h-[200px] contain rounded-[20px]"
-			/>
-			<div class="text-center">
-				<p class="font-bold">Forrest Gump</p>
-				<p>Feel good</p>
-			</div>
-		</div>
+<script setup>
+	import { movies } from "~/data/movies";
 
-		<div
-			class="w-[250px] h-[300px] border-2 border-green-300 rounded-[20px] p-[2px] m-2 flex flex-col items-center justify-around"
-		>
-			<img
-				src="/public/img/feel good.jpeg"
-				alt=""
-				class="w-[200px] h-[200px] contain rounded-[20px]"
+	const movieList = movies.filter(
+		(movie) => movie.movie_name == "Forrest Gump"
+	);
+</script>
+
+<template>
+	<div class="flex flex-wrap justify-center items-center h-[80vh]">
+		<template v-for="movie in movieList">
+			<Card
+				:img_src="movie.img_src"
+				:movie_name="movie.movie_name"
+				:gener="movie.gener"
 			/>
-			<div class="text-center">
-				<p class="font-bold">Forrest Gump</p>
-				<p>Feel good</p>
-			</div>
-		</div>
+		</template>
 	</div>
 </template>
+
