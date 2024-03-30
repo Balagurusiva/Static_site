@@ -21,7 +21,7 @@
 			<input
 				type="text"
 				placeholder="search"
-				class="outNuxtLinkne-none w-[90%] h-[50%] px-2 rounded-[20px]"
+				class="outline-none w-[90%] h-[50%] px-2 rounded-[20px]"
 			/>
 			<MdiIcon icon="mdiSearchWeb" />
 		</div>
