@@ -8,7 +8,7 @@
 			>LOGO</NuxtLink
 		>
 		<div class="nav-NuxtLinkst font-semibold w-[30%]">
-			<ul class="flex justify-around">
+			<ul class=" hidden md:flex justify-around ">
 				<NuxtLink to="/Forrest Gump" class="p-[10px]">Feel Good</NuxtLink>
 				<NuxtLink to="/Martin movies" class="p-[10px]">Martin</NuxtLink>
 				<NuxtLink to="/Nolen movies" class="p-[10px]">Nolen</NuxtLink>
@@ -26,4 +26,11 @@
 			<MdiIcon icon="mdiSearchWeb" />
 		</div>
 	</div>
+		<div class="nav-NuxtLinkst font-semibold w-full md:hidden">
+			<ul class="flex justify-around">
+				<NuxtLink to="/Forrest Gump" class="p-[10px]">Feel Good</NuxtLink>
+				<NuxtLink to="/Martin movies" class="p-[10px]">Martin</NuxtLink>
+				<NuxtLink to="/Nolen movies" class="p-[10px]">Nolen</NuxtLink>
+			</ul>
+		</div>
 </template>
