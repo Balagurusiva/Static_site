@@ -9,9 +9,9 @@
 		>
 		<div class="nav-NuxtLinkst font-semibold w-[30%]">
 			<ul class="flex justify-around">
-				<NuxtLink to="/feel-good" class="p-[10px]">Feel Good</NuxtLink>
-				<NuxtLink to="/martin" class="p-[10px]">Martin</NuxtLink>
-				<NuxtLink to="/nolens" class="p-[10px]">Nolen</NuxtLink>
+				<NuxtLink to="/Forrest Gump" class="p-[10px]">Feel Good</NuxtLink>
+				<NuxtLink to="/Martin movies" class="p-[10px]">Martin</NuxtLink>
+				<NuxtLink to="/Nolen movies" class="p-[10px]">Nolen</NuxtLink>
 			</ul>
 		</div>
 

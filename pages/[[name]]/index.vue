@@ -1,8 +1,10 @@
 <script setup>
 	import { movies } from "~/data/movies";
 
+    const route = useRoute()
+    const name = route.params.name;
 	const movieList = movies.filter(
-		(movie) => movie.movie_name == "Martin movies"
+		(movie) => movie.movie_name == name
 	);
 </script>
 
